@@ -1,6 +1,6 @@
-let cl = console.log;
+let cl = console.log();
 
-let blogs = [
+let posts = [
   {
     userId: 1,
     id: 1,
@@ -28,7 +28,7 @@ app.get('/api/posts', (req, res) => {
   try {
     res.status(200).json({
       success: true,
-      data: blogs
+      data: posts
     });
   } catch (err) {
     res.status(500).json({
